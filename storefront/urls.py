@@ -19,6 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('playground/', include('playground.urls')),  # Include the playground app URLs
-    
+    path('', include('playground.urls')),  # No prefix so /hello/ works directly
 ]
+
