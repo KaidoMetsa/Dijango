@@ -38,7 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'playground',
-    ' debug_toolbar',  # Custom app for the storefront 
+    'debug_toolbar',  # Custom app for the storefront 
+    
+]
+
+
+INSTALLED_APPS = [
+    # your apps...
+    "django.contrib.staticfiles",  # make sure this is here
+    "debug_toolbar",
 ]
 
 MIDDLEWARE = [
@@ -51,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 INTERNAL_IPS = [
     # ...
