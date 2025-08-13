@@ -1,0 +1,32 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+venv/
+.storefront-1zY-yUnd/  # your pipenv venv folder
+
+# Django stuff:
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# Media and static files
+media/
+staticfiles/
+
+# VS Code settings
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Pipenv
+Pipfile.lock
