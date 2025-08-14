@@ -43,12 +43,6 @@ INSTALLED_APPS = [
 ]
 
 
-INSTALLED_APPS = [
-    # your apps...
-    "django.contrib.staticfiles",  # make sure this is here
-    "debug_toolbar",
-]
-
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',  # Middleware for debug toolbar
     'django.middleware.security.SecurityMiddleware',
