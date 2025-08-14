@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'playground',
-    'debug_toolbar',  # Custom app for the storefront 
+    'debug_toolbar',
+    'store',
+    'tags',  # Custom app for the storefront 
     
 ]
 
