@@ -32,6 +32,9 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'store',
     'tags',
+    'rest_framework',
+    'corsheaders',
+    'backend',  # React frontend app
 ]
 
 MIDDLEWARE = [
@@ -43,7 +46,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 INTERNAL_IPS = [
     "127.0.0.1",

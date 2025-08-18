@@ -16,7 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from .views import DocumentUploadView, DocumentListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('upload/', DocumentUploadView.as_view()),
+    path('documents/', DocumentListView.as_view()),
 ]
+

@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+    'backend',  # Your app name
+    'rest_framework',  # Django REST Framework
+    'corsheaders',  # For handling CORS headers 
+    #'django_extensions',  # Optional: for development utilities 
+    'backend.serializer',  # Ensure serializers are recognized
+    ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
