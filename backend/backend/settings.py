@@ -40,9 +40,9 @@ INSTALLED_APPS = [
     'backend',  # Your app name
     'rest_framework',  # Django REST Framework
     'corsheaders',  # For handling CORS headers 
+    'ocr',  # <-- Add your OCR app here
     #'django_extensions',  # Optional: for development utilities 
-    'backend.serializer',  # Ensure serializers are recognized
-    ]
+]
 
 
 MIDDLEWARE = [
@@ -125,4 +125,5 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Document
-from .serializers import DocumentSerializer
+from .serializer import DocumentSerializer
 from django.core.files.storage import default_storage
 import pytesseract
 from PIL import Image
